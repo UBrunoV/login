@@ -1,7 +1,9 @@
 /* styles.css */
+
+/* Estilo geral para o corpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #51c771; /* Fundo verde claro */
+    background-color: #51c771; 
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,155 +11,156 @@ body {
     height: 100vh;
 }
 
+/* Container principal */
 .container {
     display: flex;
     width: 90%;
-    max-width: 900px; /* Largura máxima ajustada */
-    height: 600px; /* Altura fixa para tornar a caixa mais quadrada */
+    max-width: 900px; 
+    height: 600px; 
     background: white;
-    border-radius: 16px; /* Bordas mais arredondadas para a caixa */
+    border-radius: 16px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Adiciona posição relativa para que a tampa seja posicionada dentro da caixa */
-    overflow: hidden; /* Garante que os itens não saiam da caixa */
+    position: relative;
+    overflow: hidden; 
 }
 
+/* Painel esquerdo */
 .left-panel {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #a8e6bd, #dcedc1); /* Degradê verde claro */
-    border-top-left-radius: 16px; /* Bordas mais arredondadas */
-    border-bottom-left-radius: 16px; /* Bordas mais arredondadas */
-    padding: 30px; /* Aumenta o padding */
-    color: #004d00; /* Cor de texto escura */
+    background: linear-gradient(to right, #a8e6bd, #dcedc1); 
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 30px; 
+    color: #004d00; 
 }
 
+/* Painel direito */
 .right-panel {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Para empilhar elementos verticalmente */
-    align-items: center; /* Centraliza os itens */
-    justify-content: center; /* Centraliza verticalmente */
-    padding: 30px; /* Mantém o padding */
-    background: linear-gradient(to left, #a8e6cf, #dcedc1); /* Degradê verde claro */
-    border-top-right-radius: 16px; /* Bordas mais arredondadas */
-    border-bottom-right-radius: 16px; /* Bordas mais arredondadas */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 30px;
+    background: linear-gradient(to left, #a8e6cf, #dcedc1); 
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
+/* Overlay para a imagem */
 .overlay {
-    background-color: #81c784; /* Verde mais escuro para a tampa */
-    width: 50%; /* A tampa sempre ocupará 50% da largura */
-    height: 100%; /* Altura total da caixa */
+    background-color: #81c784; 
+    width: 50%; 
+    height: 100%; 
     position: absolute;
     top: 0;
-    left: 0; /* Começa na esquerda */
+    left: 0; 
     cursor: pointer;
-    transition: transform 0.3s ease;
-    display: flex; /* Para centralizar a imagem */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    border-radius: 16px; /* Mantém a borda arredondada da caixa */
+    transition: transform 0.7s ease;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px; 
 }
 
+/* Imagem no overlay */
 .overlay-image {
-    max-width: 80%; /* Limita a largura da imagem */
-    max-height: 80%; /* Limita a altura da imagem */
-    object-fit: contain; /* Mantém proporção da imagem */
+    max-width: 80%; 
+    max-height: 80%; 
+    object-fit: contain; 
 }
 
+/* Estilos para títulos */
 h2 {
     margin: 0 0 20px;
-    text-align: center; /* Centraliza o texto */
-    font-size: 2.5vw; /* Aumenta o tamanho da fonte responsiva */
+    text-align: center; 
+    font-size: 2.5vw; 
 }
 
+/* Contêiner de input */
 .input-container {
     position: relative;
-    width: 100%; /* Largura total */
-    max-width: 350px; /* Limita a largura máxima para inputs */
-    margin: 10px 0; /* Margem para separar os elementos */
-    display: flex; /* Usar flexbox para alinhar ícone e input */
-    align-items: center; /* Centraliza verticalmente */
+    width: 100%; 
+    max-width: 350px; 
+    margin: 10px 0; 
+    display: flex; 
+    align-items: center; 
 }
 
+/* Ícone do input */
 .icon {
-    margin-right: 10px; /* Espaço entre o ícone e o input */
-    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 10px; 
+    font-size: 20px; 
 }
 
+/* Estilos para inputs */
 input[type="text"], input[type="password"] {
-    width: 100%; /* Ajusta a largura para 100% */
-    padding: 10px; /* Padding geral para os inputs */
-    border: 1px solid #ccc; /* Borda padrão */
-    border-radius: 20px; /* Bordas mais arredondadas nos inputs */
-    font-size: 16px; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
-    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+    text-align: left; 
 }
 
+/* Estilos para o botão */
 button {
-    background-color: #28a745; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda padrão */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    margin-top: 10px; /* Espaço acima do botão */
-    transition: background-color 0.3s; /* Transição suave na cor do fundo */
-    border-radius: 20px; /* Bordas mais arredondadas no botão */
-    padding: 12px 0; /* Aumenta o padding para centralização vertical do texto */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    width: 100%; /* Garante que o botão ocupe 100% da largura */
-    margin-left: 0; /* Remove a margem à esquerda */
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    transition: background-color 0.3s; 
+    border-radius: 20px; 
+    padding: 12px 0; 
+    text-align: center; 
+    width: 100%; 
+    margin-left: 0; 
 }
 
+/* Efeito hover no botão */
 button:hover {
-    background-color: #218838; /* Cor ao passar o mouse */
+    background-color: #218838; 
 }
 
+/* Estilos responsivos */
 @media (max-width: 815px) {
     body {
-        padding: 0; /* Remove padding do body em telas pequenas */
+        padding: 0; 
     }
 
     .container {
-        flex-direction: column; /* Muda para coluna em telas pequenas */
-        height: auto; /* Ajusta a altura em telas pequenas */
+        flex-direction: column; 
+        height: auto; 
         border-radius: 16px;
-        padding: 0 10px; /* Adiciona padding de 10px de cada lado */
-        overflow: hidden; /* Garante que os itens não saiam da caixa */
-        align-items: center; /* Centraliza os itens */
+        padding: 0 10px; 
+        overflow: hidden; 
+        align-items: center; 
     }
 
-    .left-panel {
-        width: 100%; /* Ocupa 100% da largura */
-        background: #81c784; /* Verde mais escuro para a caixa superior */
-        border-top-left-radius: 16px; /* Bordas arredondadas */
-        border-top-right-radius: 16px; /* Bordas arredondadas */
-        border-bottom-left-radius: 0px; /* Remove bordas arredondadas da parte inferior */
-    }
-
-    .right-panel {
-        width: 100%; /* Ocupa 100% da largura */
-        background: #dcedc1; /* Verde mais claro para a caixa inferior */
-        border-bottom-left-radius: 16px; /* Bordas arredondadas */
-        border-bottom-right-radius: 16px; /* Bordas arredondadas */
+    .left-panel, .right-panel {
+        width: 100%; 
     }
 
     .overlay {
-        display: none; /* Oculta a tampa em telas pequenas */
+        display: none; 
     }
 
     h2 {
-        font-size: 1.5em; /* Ajusta o tamanho do título em telas pequenas */
+        font-size: 1.5em; 
     }
 
     .input-container {
-        max-width: 90%; /* Permite que os inputs ocupem mais espaço */
+        max-width: 90%; 
     }
 
     button {
-        padding: 10px; /* Ajusta o padding */
-        width: 190px; /* Ajusta a largura para 100% */
-        margin-left: 28px; /* Remove a margem à esquerda */
+        padding: 10px; 
+        width: 190px; 
+        margin-left: 28px; 
     }
 }
